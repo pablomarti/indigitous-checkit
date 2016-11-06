@@ -16,10 +16,8 @@
 
 @implementation CIBaseViewController
 
-- (void)displayLoader
-{
-    if(!self.activityIndicator)
-    {
+- (void)displayLoader {
+    if(!self.activityIndicator) {
         self.activityIndicator = [[UIActivityIndicatorView alloc]initWithActivityIndicatorStyle:UIActivityIndicatorViewStyleGray];
         self.activityIndicator.frame = CGRectMake(0.0, 0.0, 40.0, 40.0);
         self.activityIndicator.center = self.view.center;
@@ -30,10 +28,8 @@
     }
 }
 
-- (void)hideLoader
-{
-    if(self.activityIndicator)
-    {
+- (void)hideLoader {
+    if(self.activityIndicator) {
         [self.activityIndicator stopAnimating];
         [UIApplication sharedApplication].networkActivityIndicatorVisible = NO;
         self.activityIndicator = nil;

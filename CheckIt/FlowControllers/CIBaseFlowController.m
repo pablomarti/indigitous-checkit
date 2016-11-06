@@ -56,13 +56,11 @@
 
 #pragma mark - Common actions
 
-- (void)goBack
-{
+- (void)goBack {
     [self.mainViewController.navigationController popViewControllerAnimated:YES];
 }
 
-- (void)pushViewController:(CIBaseViewController *)vc
-{
+- (void)pushViewController:(CIBaseViewController *)vc {
     vc.delegate = self;
     [self.mainViewController.navigationController pushViewController:vc animated:YES];
 }
