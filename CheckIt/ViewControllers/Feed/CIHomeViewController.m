@@ -10,7 +10,7 @@
 #import "CIHomeCollectionViewCell.h"
 #import "CIStoryItemModel.h"
 #import "CIStoryItemModel.h"
-#import "CIQuestion.h"
+#import "CIQuestionModel.h"
 
 @interface CIHomeViewController ()
 
@@ -75,7 +75,7 @@
             }
             
             NSURL *questionImageURL = [NSURL URLWithString:@""]; //TODO
-            CIQuestion *question = [CIQuestion new];
+            CIQuestionModel *question = [CIQuestionModel new];
             [question setTitle:@"Question title"];
             [question setContent:@"Question content"];
             [question setImageURL:questionImageURL];

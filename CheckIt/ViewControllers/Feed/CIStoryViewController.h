@@ -15,6 +15,7 @@
 @protocol CIStoryViewControllerDelegate
 
 - (void)moveToStoryItem:(CIStoryItemModel *)storyItem;
+- (void)moveToStoryQuestion:(CIQuestion *)questionItem;
 
 @end
 

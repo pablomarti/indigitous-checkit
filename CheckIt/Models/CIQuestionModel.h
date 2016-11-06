@@ -8,7 +8,7 @@
 
 #import "CIModel.h"
 
-@interface CIQuestion : CIModel
+@interface CIQuestionModel : CIModel
 
 @property (nonatomic, strong) NSString<Optional> *title;
 @property (nonatomic, strong) NSString<Optional> *content;

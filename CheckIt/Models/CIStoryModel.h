@@ -8,6 +8,9 @@
 
 #import "CIModel.h"
 
+extern NSString * const STORY_ITEM_KEY;
+extern NSString * const STORY_QUESTION_KEY;
+
 @class CIStoryItemModel;
 @class CIQuestion;
 
@@ -16,7 +19,8 @@
 @property (nonatomic, strong) NSString<Optional> *title;
 @property (nonatomic, strong) NSString<Optional> *content;
 @property (nonatomic, strong) NSURL<Optional> *imageURL;
-@property (nonatomic, strong) NSArray <CIStoryItemModel *> *storyItems;
-@property (nonatomic, strong) NSArray <CIQuestion *> *questions;
+@property (nonatomic, strong) NSArray<CIStoryItemModel *> *storyItems;
+@property (nonatomic, strong) NSArray<CIQuestion *> *questions;
+@property (nonatomic, strong) NSArray<Ignore> *elements;
 
 @end

@@ -6,8 +6,8 @@
 //  Copyright © 2016 Indigitous. All rights reserved.
 //
 
-#import "CIQuestion.h"
+#import "CIQuestionModel.h"
 
-@implementation CIQuestion
+@implementation CIQuestionModel
 
 @end

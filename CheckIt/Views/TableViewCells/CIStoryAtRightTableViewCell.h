@@ -7,12 +7,12 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "CIStoryTableViewCell.h"
 
 @class CIStoryItemModel;
 
-@interface CIStoryAtRightTableViewCell : UITableViewCell
+@interface CIStoryAtRightTableViewCell : CIStoryTableViewCell
 
-@property (strong, nonatomic) CIStoryItemModel *storyItem;
 @property (weak, nonatomic) IBOutlet UIImageView *imgItem;
 @property (weak, nonatomic) IBOutlet UILabel *lblTitle;
 

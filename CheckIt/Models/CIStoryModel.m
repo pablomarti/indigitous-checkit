@@ -8,6 +8,9 @@
 
 #import "CIStoryModel.h"
 
+NSString * const STORY_ITEM_KEY         = @"story_item";
+NSString * const STORY_QUESTION_KEY     = @"story_question";
+
 @implementation CIStoryModel
 
 @end
