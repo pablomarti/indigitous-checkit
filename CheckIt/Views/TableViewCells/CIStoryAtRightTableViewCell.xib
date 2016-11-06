@@ -15,25 +15,34 @@
                 <frame key="frameInset" width="375" height="119"/>
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
-                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GiZ-Qa-f8w">
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="right" lineBreakMode="tailTruncation" numberOfLines="4" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GiZ-Qa-f8w">
                         <constraints>
                             <constraint firstAttribute="height" constant="95" id="kV4-sf-yEf"/>
                         </constraints>
-                        <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="18"/>
+                        <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="13"/>
                         <nil key="textColor"/>
                         <nil key="highlightedColor"/>
                     </label>
-                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="yiy-Yh-nBs">
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="siria" translatesAutoresizingMaskIntoConstraints="NO" id="yiy-Yh-nBs">
                         <constraints>
                             <constraint firstAttribute="width" constant="100" id="bLY-8o-J6L"/>
                             <constraint firstAttribute="height" constant="100" id="lkG-r0-aDx"/>
                         </constraints>
                     </imageView>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="QiN-iu-nxD">
+                        <color key="backgroundColor" red="0.92942708330000001" green="0.20867427320000001" blue="0.083053229630000003" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="1" id="LCy-sG-zAJ"/>
+                        </constraints>
+                    </view>
                 </subviews>
                 <constraints>
                     <constraint firstItem="GiZ-Qa-f8w" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="G3W-M5-Wmb"/>
+                    <constraint firstItem="QiN-iu-nxD" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="McK-lk-hHf"/>
                     <constraint firstItem="yiy-Yh-nBs" firstAttribute="leading" secondItem="GiZ-Qa-f8w" secondAttribute="trailing" constant="8" id="Nui-5n-PYV"/>
                     <constraint firstAttribute="trailing" secondItem="yiy-Yh-nBs" secondAttribute="trailing" constant="8" id="XbI-oB-XfH"/>
+                    <constraint firstAttribute="trailing" secondItem="QiN-iu-nxD" secondAttribute="trailing" id="iN8-Pt-P9O"/>
+                    <constraint firstAttribute="bottom" secondItem="QiN-iu-nxD" secondAttribute="bottom" id="k65-eO-aak"/>
                     <constraint firstItem="GiZ-Qa-f8w" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="8" id="rQh-in-pRL"/>
                     <constraint firstItem="yiy-Yh-nBs" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="veV-WA-L7N"/>
                 </constraints>
@@ -45,4 +54,7 @@
             <point key="canvasLocation" x="54.5" y="54"/>
         </tableViewCell>
     </objects>
+    <resources>
+        <image name="siria" width="187" height="160"/>
+    </resources>
 </document>

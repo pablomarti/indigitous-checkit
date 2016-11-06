@@ -7,12 +7,11 @@
 //
 
 #import <UIKit/UIKit.h>
-
-@class CIQuestion;
+#import "CIQuestionModel.h"
 
 @interface CIStoryQuestionTableViewCell : UITableViewCell
 
-@property (strong, nonatomic) CIQuestion *question;
+@property (strong, nonatomic) CIQuestionModel *question;
 @property (weak, nonatomic) IBOutlet UIImageView *imgQuestion;
 @property (weak, nonatomic) IBOutlet UILabel *lblTitle;
 

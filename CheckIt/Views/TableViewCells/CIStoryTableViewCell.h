@@ -7,8 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
-
-@class CIStoryItemModel;
+#import "CIStoryItemModel.h"
 
 @interface CIStoryTableViewCell : UITableViewCell
 

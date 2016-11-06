@@ -16,27 +16,37 @@
                 <frame key="frameInset" width="375" height="119"/>
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
-                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="kAR-YZ-QHd">
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="siria" translatesAutoresizingMaskIntoConstraints="NO" id="kAR-YZ-QHd">
                         <constraints>
                             <constraint firstAttribute="width" constant="100" id="58w-vV-F6d"/>
                             <constraint firstAttribute="height" constant="100" id="s3d-Em-hWQ"/>
                         </constraints>
                     </imageView>
-                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jXx-lx-E2M">
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" numberOfLines="4" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jXx-lx-E2M">
                         <constraints>
                             <constraint firstAttribute="height" constant="95" id="1tS-TC-IKU"/>
                         </constraints>
-                        <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="18"/>
+                        <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="13"/>
                         <nil key="textColor"/>
                         <nil key="highlightedColor"/>
                     </label>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="UXM-Bz-8r0">
+                        <color key="backgroundColor" red="0.92942708330000001" green="0.20867427320000001" blue="0.083053229630000003" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="1" id="lTk-wx-3Dd"/>
+                            <constraint firstAttribute="height" constant="1" id="vlW-3b-A83"/>
+                        </constraints>
+                    </view>
                 </subviews>
                 <constraints>
                     <constraint firstItem="jXx-lx-E2M" firstAttribute="trailing" secondItem="H2p-sc-9uM" secondAttribute="trailingMargin" constant="8" id="3Gi-w9-ZAQ"/>
+                    <constraint firstItem="UXM-Bz-8r0" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="3hL-rR-CsD"/>
                     <constraint firstItem="kAR-YZ-QHd" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="Chp-LZ-9wE"/>
                     <constraint firstItem="jXx-lx-E2M" firstAttribute="leading" secondItem="kAR-YZ-QHd" secondAttribute="trailing" constant="8" id="M43-uO-qjb"/>
                     <constraint firstItem="jXx-lx-E2M" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="Qjz-9i-aKL"/>
                     <constraint firstItem="kAR-YZ-QHd" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" constant="8" id="ePr-5a-3l5"/>
+                    <constraint firstAttribute="trailing" secondItem="UXM-Bz-8r0" secondAttribute="trailing" id="ivz-mo-Fbh"/>
+                    <constraint firstAttribute="bottom" secondItem="UXM-Bz-8r0" secondAttribute="bottom" id="za9-UK-xme"/>
                 </constraints>
             </tableViewCellContentView>
             <connections>
@@ -46,4 +56,7 @@
             <point key="canvasLocation" x="33.5" y="54"/>
         </tableViewCell>
     </objects>
+    <resources>
+        <image name="siria" width="187" height="160"/>
+    </resources>
 </document>

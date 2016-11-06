@@ -12,6 +12,7 @@
 @interface CIColors : NSObject
 
 + (UIColor *)white;
++ (UIColor *)red;
 + (UIColor *)navigationBarColor;
 
 @end

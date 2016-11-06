@@ -26,7 +26,7 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    [self displayCustomTitle:@"Story"];
+    [self displayCustomTitle:@"Timeline"];
     [self displayBackButton];
 }
 
@@ -58,7 +58,7 @@
 }
 
 -(CGFloat)tableView:(UITableView *)tableView heightForHeaderInSection:(NSInteger)section {
-    return 12;
+    return 0;
 }
 
 -(UIView *)tableView:(UITableView *)tableView viewForHeaderInSection:(NSInteger)section {
@@ -82,7 +82,7 @@
     }
     else {
         CIStoryQuestionTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier: @"CIStoryQuestionTableViewCell"];
-        cell.question = (CIQuestion *)[dictionary objectForKey:@"item"];
+        cell.question = (CIQuestionModel *)[dictionary objectForKey:@"item"];
         return cell;
     }
 }
@@ -96,10 +96,10 @@
 {
     NSDictionary *dictionary = [self.storyItems objectAtIndex:indexPath.section];
     if ([[dictionary objectForKey:@"key"] isEqualToString: STORY_ITEM_KEY]) {
-        // move to story
+        [self.delegate moveToStoryItem: (CIStoryItemModel *)[dictionary objectForKey:@"item"]];
     }
     else {
-        // move to question
+        [self.delegate moveToStoryQuestion: (CIQuestionModel *)[dictionary objectForKey:@"item"]];
     }
 }
 

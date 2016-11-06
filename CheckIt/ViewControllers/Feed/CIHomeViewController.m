@@ -61,7 +61,7 @@
     for (int i = 0; i < 12; i++) {
         NSURL *storyImageURL = [NSURL URLWithString:@""]; //TODO
         CIStoryModel *story = [CIStoryModel new];
-        [story setTitle:@"Custom title"];
+        [story setTitle:@"Syrian refugees between war and crackdown"];
         [story setContent:@"Custom description"];
         [story setImageURL:storyImageURL];
         [self.stories addObject:story];

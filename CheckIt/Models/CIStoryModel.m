@@ -24,10 +24,10 @@ NSString * const STORY_QUESTION_KEY     = @"story_question";
         date = [date dateByAddingTimeInterval:-1*j*24*60*60];
         
         for(int k = 0; k < 3; k++) {
-            NSArray *imagesURLs; //TODO
+            NSArray *imagesURLs = [NSArray new]; //TODO
             CIStoryItemModel *item = [CIStoryItemModel new];
-            [item setTitle:@"Custom Title"];
-            [item setContent:@"Custom content"];
+            [item setTitle:@"Syrian refugees between war and crackdown"];
+            [item setContent:@"More than 1.5 million refugees have made Lebanon their temporary home, but newly elected President Aoun is vowing to send them back to their country."];
             [item setDate: date];
             [item setImagesURLs: imagesURLs];
             [elements addObject: @{@"key": STORY_ITEM_KEY, @"item": item}];
@@ -35,8 +35,8 @@ NSString * const STORY_QUESTION_KEY     = @"story_question";
         
         NSURL *questionImageURL = [NSURL URLWithString:@""]; //TODO
         CIQuestionModel *question = [CIQuestionModel new];
-        [question setTitle:@"Question title"];
-        [question setContent:@"Question content"];
+        [question setTitle:@"Question"];
+        [question setContent:@"What would you do if you were asked to go back to Syria?"];
         [question setImageURL:questionImageURL];
         [question setDate: date];
         [elements addObject: @{@"key": STORY_QUESTION_KEY, @"item": question}];

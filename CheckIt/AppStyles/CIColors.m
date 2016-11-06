@@ -14,8 +14,12 @@
     return [UIColor whiteColor];
 }
 
++ (UIColor *)red {
+    return [self colorWithRed:237.0f green:37.0f blue:29.0f];
+}
+
 + (UIColor *)navigationBarColor {
-    return [self colorWithRed:94.0f green:108.0f blue:115.0f];
+    return [self red];
 }
 
 #pragma mark - Base methods

@@ -10,12 +10,12 @@
 
 @class CIStoryModel;
 @class CIStoryItemModel;
-@class CIQuestion;
+@class CIQuestionModel;
 
 @protocol CIStoryViewControllerDelegate
 
 - (void)moveToStoryItem:(CIStoryItemModel *)storyItem;
-- (void)moveToStoryQuestion:(CIQuestion *)questionItem;
+- (void)moveToStoryQuestion:(CIQuestionModel *)questionItem;
 
 @end
 

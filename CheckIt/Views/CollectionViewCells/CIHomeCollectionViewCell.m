@@ -10,9 +10,9 @@
 
 @implementation CIHomeCollectionViewCell
 
-- (void)awakeFromNib {
-    [super awakeFromNib];
-    // Initialization code
+
+- (void)didMoveToSuperview {
+    [self.lblMessage setText: self.story.title];
 }
 
 @end

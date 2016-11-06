@@ -10,6 +10,8 @@
 #import "CIHomeViewController.h"
 #import "CIStoryViewController.h"
 #import "CIStoryItemViewController.h"
+#import "CIQuestionPollViewController.h"
+#import "CIQuestionTextViewController.h"
 
 @class CIStoryModel;
 @class CIStoryItemModel;
@@ -46,6 +48,11 @@
 - (void)moveToStoryItem:(CIStoryItemModel *)storyItem {
     CIStoryItemViewController *vc = [[CIStoryItemViewController alloc] initWithNibName:@"CIStoryItemViewController" bundle:nil];
     vc.storyItem = storyItem;
+    [self pushViewController: vc];
+}
+
+- (void)moveToStoryQuestion:(CIQuestion *)questionItem {
+    CIQuestionPollViewController *vc = [[CIQuestionPollViewController alloc] initWithNibName:@"CIQuestionPollViewController" bundle:nil];
     [self pushViewController: vc];
 }
 
