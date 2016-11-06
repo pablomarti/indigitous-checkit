@@ -22,6 +22,7 @@
 		0FDE008C1DCEE47A00005A5F /* CIStoryItemViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0FDE008A1DCEE47A00005A5F /* CIStoryItemViewController.xib */; };
 		0FDE008F1DCEE64100005A5F /* CIColors.m in Sources */ = {isa = PBXBuildFile; fileRef = 0FDE008E1DCEE64100005A5F /* CIColors.m */; };
 		0FDE00961DCEE71000005A5F /* CIFonts.m in Sources */ = {isa = PBXBuildFile; fileRef = 0FDE00951DCEE71000005A5F /* CIFonts.m */; };
+		0FDE00991DCEEB0500005A5F /* CIRoutesHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = 0FDE00981DCEEB0500005A5F /* CIRoutesHandler.m */; };
 		4BC367C3F0E7A247EA6A971A /* libPods-CheckIt.a in Frameworks */ = {isa = PBXBuildFile; fileRef = B9BB19EAFCAB44B03BFA8F05 /* libPods-CheckIt.a */; };
 /* End PBXBuildFile section */
 
@@ -52,6 +53,8 @@
 		0FDE008E1DCEE64100005A5F /* CIColors.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CIColors.m; path = AppStyles/CIColors.m; sourceTree = "<group>"; };
 		0FDE00941DCEE71000005A5F /* CIFonts.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CIFonts.h; path = AppStyles/CIFonts.h; sourceTree = "<group>"; };
 		0FDE00951DCEE71000005A5F /* CIFonts.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CIFonts.m; path = AppStyles/CIFonts.m; sourceTree = "<group>"; };
+		0FDE00971DCEEB0500005A5F /* CIRoutesHandler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CIRoutesHandler.h; path = Routing/CIRoutesHandler.h; sourceTree = "<group>"; };
+		0FDE00981DCEEB0500005A5F /* CIRoutesHandler.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CIRoutesHandler.m; path = Routing/CIRoutesHandler.m; sourceTree = "<group>"; };
 		6D254E0FAF679C22485413C3 /* Pods-CheckIt.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CheckIt.debug.xcconfig"; path = "Pods/Target Support Files/Pods-CheckIt/Pods-CheckIt.debug.xcconfig"; sourceTree = "<group>"; };
 		9F2D82AFFD2478DDFCFE5A75 /* Pods-CheckIt.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CheckIt.release.xcconfig"; path = "Pods/Target Support Files/Pods-CheckIt/Pods-CheckIt.release.xcconfig"; sourceTree = "<group>"; };
 		B9BB19EAFCAB44B03BFA8F05 /* libPods-CheckIt.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-CheckIt.a"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -148,6 +151,8 @@
 		0FDE00681DCED87D00005A5F /* Routing */ = {
 			isa = PBXGroup;
 			children = (
+				0FDE00971DCEEB0500005A5F /* CIRoutesHandler.h */,
+				0FDE00981DCEEB0500005A5F /* CIRoutesHandler.m */,
 			);
 			name = Routing;
 			sourceTree = "<group>";
@@ -365,6 +370,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0FDE00991DCEEB0500005A5F /* CIRoutesHandler.m in Sources */,
 				0FDE00761DCED96500005A5F /* CIBaseFlowController.m in Sources */,
 				0FDE008B1DCEE47A00005A5F /* CIStoryItemViewController.m in Sources */,
 				0FDE00811DCEDB5000005A5F /* CIHomeViewController.m in Sources */,
