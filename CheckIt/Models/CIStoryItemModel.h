@@ -8,6 +8,14 @@
 
 #import "CIModel.h"
 
+@class CIQuestion;
+
 @interface CIStoryItemModel : CIModel
+
+@property (nonatomic, strong) NSString *title;
+@property (nonatomic, strong) NSString *content;
+@property (nonatomic, strong) NSDate *date;
+@property (nonatomic, strong) NSArray<Optional> *imagesURLs;
+@property (nonatomic, strong) CIQuestion<Ignore> *question;
 
 @end

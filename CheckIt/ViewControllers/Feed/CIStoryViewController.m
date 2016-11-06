@@ -14,4 +14,10 @@
 
 @implementation CIStoryViewController
 
+- (void)viewDidLoad {
+    [super viewDidLoad];
+    [self displayCustomTitle:@"Story"];
+    [self displayBackButton];
+}
+
 @end

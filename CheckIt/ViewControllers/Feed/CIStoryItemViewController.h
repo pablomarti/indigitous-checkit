@@ -7,11 +7,14 @@
 //
 
 #import "CIBaseViewController.h"
+#import "CIStoryItemModel.h"
 
 @protocol CIStoryItemViewControllerDelegate
 
 @end
 
 @interface CIStoryItemViewController : CIBaseViewController
+
+@property (nonatomic, strong) CIStoryItemModel *storyItem;
 
 @end

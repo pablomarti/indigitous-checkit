@@ -8,12 +8,20 @@
 
 #import "CIBaseViewController.h"
 
+@class CIStoryModel;
+@class CIStoryItemModel;
+@class CIQuestion;
+
 @protocol CIStoryViewControllerDelegate
 
-- (void)moveToStoryItem;
+- (void)moveToStoryItem:(CIStoryItemModel *)storyItem;
 
 @end
 
-@interface CIStoryViewController : CIBaseViewController
+@interface CIStoryViewController : CIBaseViewController <UITableViewDataSource, UITableViewDelegate>
+
+@property (nonatomic, strong) CIStoryModel *story;
+@property (weak, nonatomic) IBOutlet UITableView *tableView;
+@property (weak, nonatomic) IBOutlet UILabel *lblTitle;
 
 @end

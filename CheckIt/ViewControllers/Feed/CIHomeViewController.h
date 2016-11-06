@@ -8,9 +8,13 @@
 
 #import "CIBaseViewController.h"
 
+@class CIStoryModel;
+@class CIStoryItemModel;
+@class CIQuestion;
+
 @protocol CIHomeViewControllerDelegate
 
-- (void)moveToStory;
+- (void)moveToStory:(CIStoryModel *)story;
 
 @end
 

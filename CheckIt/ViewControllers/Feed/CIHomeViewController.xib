@@ -17,12 +17,10 @@
             <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="S44-Sm-TYd">
-                    <frame key="frameInset" width="375" height="667"/>
-                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="S44-Sm-TYd">
                     <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                    <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="iK9-j0-h7c">
-                        <size key="itemSize" width="50" height="50"/>
+                    <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="0.0" minimumInteritemSpacing="0.0" id="iK9-j0-h7c">
+                        <size key="itemSize" width="160" height="160"/>
                         <size key="headerReferenceSize" width="0.0" height="0.0"/>
                         <size key="footerReferenceSize" width="0.0" height="0.0"/>
                         <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
@@ -34,6 +32,12 @@
                 </collectionView>
             </subviews>
             <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="S44-Sm-TYd" secondAttribute="bottom" id="Kan-eX-PQR"/>
+                <constraint firstItem="S44-Sm-TYd" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="St6-u8-5dA"/>
+                <constraint firstAttribute="trailing" secondItem="S44-Sm-TYd" secondAttribute="trailing" id="hiE-bM-89z"/>
+                <constraint firstItem="S44-Sm-TYd" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="s8U-jM-LWs"/>
+            </constraints>
             <point key="canvasLocation" x="35.5" y="54.5"/>
         </view>
     </objects>

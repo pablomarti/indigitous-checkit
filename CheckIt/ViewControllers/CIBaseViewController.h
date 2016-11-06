@@ -12,6 +12,10 @@
 
 @property (nonatomic, strong) id delegate;
 
+
+- (void)displayCustomTitle:(NSString *)title;
+- (void)displayBackButton;
+- (void)displayShareButton;
 - (void)viewControllerConfiguration;
 - (void)displayLoader;
 - (void)hideLoader;

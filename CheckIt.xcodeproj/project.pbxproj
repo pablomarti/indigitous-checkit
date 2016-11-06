@@ -28,6 +28,11 @@
 		0FDE00A21DCEEE4E00005A5F /* CIStoryItemModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 0FDE00A11DCEEE4E00005A5F /* CIStoryItemModel.m */; };
 		0FF2999E1DCF7B6300969698 /* CIHomeCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 0FF2999C1DCF7B6300969698 /* CIHomeCollectionViewCell.m */; };
 		0FF2999F1DCF7B6300969698 /* CIHomeCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0FF2999D1DCF7B6300969698 /* CIHomeCollectionViewCell.xib */; };
+		0FF299A21DCF8A6F00969698 /* CIQuestion.m in Sources */ = {isa = PBXBuildFile; fileRef = 0FF299A11DCF8A6F00969698 /* CIQuestion.m */; };
+		0FF299A71DCF9E3000969698 /* CIStoryAtLeftTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 0FF299A51DCF9E3000969698 /* CIStoryAtLeftTableViewCell.m */; };
+		0FF299A81DCF9E3000969698 /* CIStoryAtLeftTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0FF299A61DCF9E3000969698 /* CIStoryAtLeftTableViewCell.xib */; };
+		0FF299AC1DCF9E4900969698 /* CIStoryAtRightTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 0FF299AA1DCF9E4900969698 /* CIStoryAtRightTableViewCell.m */; };
+		0FF299AD1DCF9E4900969698 /* CIStoryAtRightTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0FF299AB1DCF9E4900969698 /* CIStoryAtRightTableViewCell.xib */; };
 		4BC367C3F0E7A247EA6A971A /* libPods-CheckIt.a in Frameworks */ = {isa = PBXBuildFile; fileRef = B9BB19EAFCAB44B03BFA8F05 /* libPods-CheckIt.a */; };
 /* End PBXBuildFile section */
 
@@ -69,6 +74,14 @@
 		0FF2999B1DCF7B6300969698 /* CIHomeCollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CIHomeCollectionViewCell.h; path = Views/CollectionViewCells/CIHomeCollectionViewCell.h; sourceTree = "<group>"; };
 		0FF2999C1DCF7B6300969698 /* CIHomeCollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CIHomeCollectionViewCell.m; path = Views/CollectionViewCells/CIHomeCollectionViewCell.m; sourceTree = "<group>"; };
 		0FF2999D1DCF7B6300969698 /* CIHomeCollectionViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = CIHomeCollectionViewCell.xib; path = Views/CollectionViewCells/CIHomeCollectionViewCell.xib; sourceTree = "<group>"; };
+		0FF299A01DCF8A6F00969698 /* CIQuestion.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CIQuestion.h; path = Models/CIQuestion.h; sourceTree = "<group>"; };
+		0FF299A11DCF8A6F00969698 /* CIQuestion.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CIQuestion.m; path = Models/CIQuestion.m; sourceTree = "<group>"; };
+		0FF299A41DCF9E3000969698 /* CIStoryAtLeftTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CIStoryAtLeftTableViewCell.h; path = Views/TableViewCells/CIStoryAtLeftTableViewCell.h; sourceTree = "<group>"; };
+		0FF299A51DCF9E3000969698 /* CIStoryAtLeftTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CIStoryAtLeftTableViewCell.m; path = Views/TableViewCells/CIStoryAtLeftTableViewCell.m; sourceTree = "<group>"; };
+		0FF299A61DCF9E3000969698 /* CIStoryAtLeftTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = CIStoryAtLeftTableViewCell.xib; path = Views/TableViewCells/CIStoryAtLeftTableViewCell.xib; sourceTree = "<group>"; };
+		0FF299A91DCF9E4900969698 /* CIStoryAtRightTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CIStoryAtRightTableViewCell.h; path = Views/TableViewCells/CIStoryAtRightTableViewCell.h; sourceTree = "<group>"; };
+		0FF299AA1DCF9E4900969698 /* CIStoryAtRightTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CIStoryAtRightTableViewCell.m; path = Views/TableViewCells/CIStoryAtRightTableViewCell.m; sourceTree = "<group>"; };
+		0FF299AB1DCF9E4900969698 /* CIStoryAtRightTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = CIStoryAtRightTableViewCell.xib; path = Views/TableViewCells/CIStoryAtRightTableViewCell.xib; sourceTree = "<group>"; };
 		6D254E0FAF679C22485413C3 /* Pods-CheckIt.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CheckIt.debug.xcconfig"; path = "Pods/Target Support Files/Pods-CheckIt/Pods-CheckIt.debug.xcconfig"; sourceTree = "<group>"; };
 		9F2D82AFFD2478DDFCFE5A75 /* Pods-CheckIt.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CheckIt.release.xcconfig"; path = "Pods/Target Support Files/Pods-CheckIt/Pods-CheckIt.release.xcconfig"; sourceTree = "<group>"; };
 		B9BB19EAFCAB44B03BFA8F05 /* libPods-CheckIt.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-CheckIt.a"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -148,6 +161,7 @@
 		0FDE00661DCED87000005A5F /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				0FF299A31DCF9DF700969698 /* TableViewCells */,
 				0FF2999A1DCF7B3600969698 /* CollectionViewCells */,
 			);
 			name = Views;
@@ -188,6 +202,8 @@
 				0FDE009E1DCEEE3B00005A5F /* CIStoryModel.m */,
 				0FDE00A01DCEEE4E00005A5F /* CIStoryItemModel.h */,
 				0FDE00A11DCEEE4E00005A5F /* CIStoryItemModel.m */,
+				0FF299A01DCF8A6F00969698 /* CIQuestion.h */,
+				0FF299A11DCF8A6F00969698 /* CIQuestion.m */,
 			);
 			name = Models;
 			sourceTree = "<group>";
@@ -268,6 +284,19 @@
 			name = CollectionViewCells;
 			sourceTree = "<group>";
 		};
+		0FF299A31DCF9DF700969698 /* TableViewCells */ = {
+			isa = PBXGroup;
+			children = (
+				0FF299A41DCF9E3000969698 /* CIStoryAtLeftTableViewCell.h */,
+				0FF299A51DCF9E3000969698 /* CIStoryAtLeftTableViewCell.m */,
+				0FF299A61DCF9E3000969698 /* CIStoryAtLeftTableViewCell.xib */,
+				0FF299A91DCF9E4900969698 /* CIStoryAtRightTableViewCell.h */,
+				0FF299AA1DCF9E4900969698 /* CIStoryAtRightTableViewCell.m */,
+				0FF299AB1DCF9E4900969698 /* CIStoryAtRightTableViewCell.xib */,
+			);
+			name = TableViewCells;
+			sourceTree = "<group>";
+		};
 		85CE7DD9CA021210615E885B /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
@@ -341,9 +370,11 @@
 				0FDE005F1DCEC9FA00005A5F /* LaunchScreen.storyboard in Resources */,
 				0FDE00821DCEDB5000005A5F /* CIHomeViewController.xib in Resources */,
 				0FDE00871DCEDB7F00005A5F /* CIStoryViewController.xib in Resources */,
+				0FF299AD1DCF9E4900969698 /* CIStoryAtRightTableViewCell.xib in Resources */,
 				0FF2999F1DCF7B6300969698 /* CIHomeCollectionViewCell.xib in Resources */,
 				0FDE008C1DCEE47A00005A5F /* CIStoryItemViewController.xib in Resources */,
 				0FDE005C1DCEC9FA00005A5F /* Assets.xcassets in Resources */,
+				0FF299A81DCF9E3000969698 /* CIStoryAtLeftTableViewCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -403,8 +434,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				0FDE00991DCEEB0500005A5F /* CIRoutesHandler.m in Sources */,
+				0FF299AC1DCF9E4900969698 /* CIStoryAtRightTableViewCell.m in Sources */,
 				0FDE00761DCED96500005A5F /* CIBaseFlowController.m in Sources */,
 				0FDE008B1DCEE47A00005A5F /* CIStoryItemViewController.m in Sources */,
+				0FF299A71DCF9E3000969698 /* CIStoryAtLeftTableViewCell.m in Sources */,
 				0FDE00811DCEDB5000005A5F /* CIHomeViewController.m in Sources */,
 				0FDE00791DCED97900005A5F /* CIFeedFlowController.m in Sources */,
 				0FDE009C1DCEED9F00005A5F /* CIModel.m in Sources */,
@@ -413,6 +446,7 @@
 				0FDE00A21DCEEE4E00005A5F /* CIStoryItemModel.m in Sources */,
 				0FDE00511DCEC9FA00005A5F /* main.m in Sources */,
 				0FF2999E1DCF7B6300969698 /* CIHomeCollectionViewCell.m in Sources */,
+				0FF299A21DCF8A6F00969698 /* CIQuestion.m in Sources */,
 				0FDE007C1DCEDB0200005A5F /* CIBaseViewController.m in Sources */,
 				0FDE00961DCEE71000005A5F /* CIFonts.m in Sources */,
 				0FDE009F1DCEEE3B00005A5F /* CIStoryModel.m in Sources */,

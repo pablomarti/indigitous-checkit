@@ -11,6 +11,9 @@
 #import "CIStoryViewController.h"
 #import "CIStoryItemViewController.h"
 
+@class CIStoryModel;
+@class CIStoryItemModel;
+
 @interface CIFeedFlowController()<CIHomeViewControllerDelegate, CIStoryViewControllerDelegate, CIStoryItemViewControllerDelegate>
 
 @end
@@ -32,15 +35,17 @@
 
 #pragma mark - CIHomeViewControllerDelegate
 
-- (void)moveToStory {
+- (void)moveToStory:(CIStoryModel *)story {
     CIStoryViewController *vc = [[CIStoryViewController alloc] initWithNibName:@"CIStoryViewController" bundle:nil];
+    vc.story = story;
     [self pushViewController: vc];
 }
 
 #pragma mark - CIStoryViewControllerDelegate
 
-- (void)moveToStoryItem {
+- (void)moveToStoryItem:(CIStoryItemModel *)storyItem {
     CIStoryItemViewController *vc = [[CIStoryItemViewController alloc] initWithNibName:@"CIStoryItemViewController" bundle:nil];
+    vc.storyItem = storyItem;
     [self pushViewController: vc];
 }
 
