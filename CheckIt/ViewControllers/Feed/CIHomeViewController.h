@@ -8,6 +8,12 @@
 
 #import "CIBaseViewController.h"
 
+@protocol CIHomeViewControllerDelegate
+
+- (void)moveToStory;
+
+@end
+
 @interface CIHomeViewController : CIBaseViewController
 
 @end

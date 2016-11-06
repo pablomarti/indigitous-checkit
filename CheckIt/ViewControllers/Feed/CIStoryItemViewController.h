@@ -1,5 +1,5 @@
 //
-//  CIStoryViewController.h
+//  CIStoryItemViewController.h
 //  CheckIt
 //
 //  Created by Devserker on 11/5/16.
@@ -8,12 +8,10 @@
 
 #import "CIBaseViewController.h"
 
-@protocol CIStoryViewControllerDelegate
-
-- (void)moveToStoryItem;
+@protocol CIStoryItemViewControllerDelegate
 
 @end
 
-@interface CIStoryViewController : CIBaseViewController
+@interface CIStoryItemViewController : CIBaseViewController
 
 @end

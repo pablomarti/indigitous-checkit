@@ -18,6 +18,10 @@
 		0FDE00821DCEDB5000005A5F /* CIHomeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0FDE00801DCEDB5000005A5F /* CIHomeViewController.xib */; };
 		0FDE00861DCEDB7F00005A5F /* CIStoryViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0FDE00841DCEDB7F00005A5F /* CIStoryViewController.m */; };
 		0FDE00871DCEDB7F00005A5F /* CIStoryViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0FDE00851DCEDB7F00005A5F /* CIStoryViewController.xib */; };
+		0FDE008B1DCEE47A00005A5F /* CIStoryItemViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0FDE00891DCEE47A00005A5F /* CIStoryItemViewController.m */; };
+		0FDE008C1DCEE47A00005A5F /* CIStoryItemViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0FDE008A1DCEE47A00005A5F /* CIStoryItemViewController.xib */; };
+		0FDE008F1DCEE64100005A5F /* CIColors.m in Sources */ = {isa = PBXBuildFile; fileRef = 0FDE008E1DCEE64100005A5F /* CIColors.m */; };
+		0FDE00961DCEE71000005A5F /* CIFonts.m in Sources */ = {isa = PBXBuildFile; fileRef = 0FDE00951DCEE71000005A5F /* CIFonts.m */; };
 		4BC367C3F0E7A247EA6A971A /* libPods-CheckIt.a in Frameworks */ = {isa = PBXBuildFile; fileRef = B9BB19EAFCAB44B03BFA8F05 /* libPods-CheckIt.a */; };
 /* End PBXBuildFile section */
 
@@ -41,6 +45,13 @@
 		0FDE00831DCEDB7F00005A5F /* CIStoryViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CIStoryViewController.h; path = ViewControllers/Feed/CIStoryViewController.h; sourceTree = "<group>"; };
 		0FDE00841DCEDB7F00005A5F /* CIStoryViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CIStoryViewController.m; path = ViewControllers/Feed/CIStoryViewController.m; sourceTree = "<group>"; };
 		0FDE00851DCEDB7F00005A5F /* CIStoryViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = CIStoryViewController.xib; path = ViewControllers/Feed/CIStoryViewController.xib; sourceTree = "<group>"; };
+		0FDE00881DCEE47A00005A5F /* CIStoryItemViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CIStoryItemViewController.h; path = ViewControllers/Feed/CIStoryItemViewController.h; sourceTree = "<group>"; };
+		0FDE00891DCEE47A00005A5F /* CIStoryItemViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CIStoryItemViewController.m; path = ViewControllers/Feed/CIStoryItemViewController.m; sourceTree = "<group>"; };
+		0FDE008A1DCEE47A00005A5F /* CIStoryItemViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = CIStoryItemViewController.xib; path = ViewControllers/Feed/CIStoryItemViewController.xib; sourceTree = "<group>"; };
+		0FDE008D1DCEE64100005A5F /* CIColors.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CIColors.h; path = AppStyles/CIColors.h; sourceTree = "<group>"; };
+		0FDE008E1DCEE64100005A5F /* CIColors.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CIColors.m; path = AppStyles/CIColors.m; sourceTree = "<group>"; };
+		0FDE00941DCEE71000005A5F /* CIFonts.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CIFonts.h; path = AppStyles/CIFonts.h; sourceTree = "<group>"; };
+		0FDE00951DCEE71000005A5F /* CIFonts.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CIFonts.m; path = AppStyles/CIFonts.m; sourceTree = "<group>"; };
 		6D254E0FAF679C22485413C3 /* Pods-CheckIt.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CheckIt.debug.xcconfig"; path = "Pods/Target Support Files/Pods-CheckIt/Pods-CheckIt.debug.xcconfig"; sourceTree = "<group>"; };
 		9F2D82AFFD2478DDFCFE5A75 /* Pods-CheckIt.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CheckIt.release.xcconfig"; path = "Pods/Target Support Files/Pods-CheckIt/Pods-CheckIt.release.xcconfig"; sourceTree = "<group>"; };
 		B9BB19EAFCAB44B03BFA8F05 /* libPods-CheckIt.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-CheckIt.a"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -88,9 +99,9 @@
 		0FDE004E1DCEC9FA00005A5F /* CheckIt */ = {
 			isa = PBXGroup;
 			children = (
+				0FDE006E1DCED8A700005A5F /* AppStyles */,
 				0FDE00701DCED8B100005A5F /* API */,
 				0FDE006F1DCED8AA00005A5F /* Categories */,
-				0FDE006E1DCED8A700005A5F /* Configs */,
 				0FDE006D1DCED89C00005A5F /* ErrorHandling */,
 				0FDE006C1DCED89500005A5F /* FlowControllers */,
 				0FDE006B1DCED89100005A5F /* Helpers */,
@@ -180,11 +191,15 @@
 			name = ErrorHandling;
 			sourceTree = "<group>";
 		};
-		0FDE006E1DCED8A700005A5F /* Configs */ = {
+		0FDE006E1DCED8A700005A5F /* AppStyles */ = {
 			isa = PBXGroup;
 			children = (
+				0FDE008D1DCEE64100005A5F /* CIColors.h */,
+				0FDE008E1DCEE64100005A5F /* CIColors.m */,
+				0FDE00941DCEE71000005A5F /* CIFonts.h */,
+				0FDE00951DCEE71000005A5F /* CIFonts.m */,
 			);
-			name = Configs;
+			name = AppStyles;
 			sourceTree = "<group>";
 		};
 		0FDE006F1DCED8AA00005A5F /* Categories */ = {
@@ -210,6 +225,9 @@
 				0FDE00831DCEDB7F00005A5F /* CIStoryViewController.h */,
 				0FDE00841DCEDB7F00005A5F /* CIStoryViewController.m */,
 				0FDE00851DCEDB7F00005A5F /* CIStoryViewController.xib */,
+				0FDE00881DCEE47A00005A5F /* CIStoryItemViewController.h */,
+				0FDE00891DCEE47A00005A5F /* CIStoryItemViewController.m */,
+				0FDE008A1DCEE47A00005A5F /* CIStoryItemViewController.xib */,
 			);
 			name = Feed;
 			sourceTree = "<group>";
@@ -287,6 +305,7 @@
 				0FDE005F1DCEC9FA00005A5F /* LaunchScreen.storyboard in Resources */,
 				0FDE00821DCEDB5000005A5F /* CIHomeViewController.xib in Resources */,
 				0FDE00871DCEDB7F00005A5F /* CIStoryViewController.xib in Resources */,
+				0FDE008C1DCEE47A00005A5F /* CIStoryItemViewController.xib in Resources */,
 				0FDE005C1DCEC9FA00005A5F /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -347,12 +366,15 @@
 			buildActionMask = 2147483647;
 			files = (
 				0FDE00761DCED96500005A5F /* CIBaseFlowController.m in Sources */,
+				0FDE008B1DCEE47A00005A5F /* CIStoryItemViewController.m in Sources */,
 				0FDE00811DCEDB5000005A5F /* CIHomeViewController.m in Sources */,
 				0FDE00791DCED97900005A5F /* CIFeedFlowController.m in Sources */,
 				0FDE00541DCEC9FA00005A5F /* AppDelegate.m in Sources */,
 				0FDE00861DCEDB7F00005A5F /* CIStoryViewController.m in Sources */,
 				0FDE00511DCEC9FA00005A5F /* main.m in Sources */,
 				0FDE007C1DCEDB0200005A5F /* CIBaseViewController.m in Sources */,
+				0FDE00961DCEE71000005A5F /* CIFonts.m in Sources */,
+				0FDE008F1DCEE64100005A5F /* CIColors.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

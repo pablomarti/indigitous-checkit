@@ -8,9 +8,12 @@
 
 #import <Foundation/Foundation.h>
 #import <UIKit/UIKit.h>
+#import "CIBaseViewController.h"
 
 @interface CIBaseFlowController : NSObject
 
++ (CIBaseFlowController *)mainController;
+- (CIBaseViewController *)initialViewController;
 - (void)initializeWithWindow:(UIWindow *)window launchOptions:(NSDictionary *)launchOptions;
 - (void)initializeWithRootViewController:(UINavigationController *)vc;
 
