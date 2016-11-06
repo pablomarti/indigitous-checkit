@@ -16,6 +16,14 @@
 
 @implementation CIBaseViewController
 
+- (void)viewDidLoad {
+    [super viewDidLoad];
+    [self viewControllerConfiguration];
+}
+
+- (void)viewControllerConfiguration {
+}
+
 - (void)displayLoader {
     if(!self.activityIndicator) {
         self.activityIndicator = [[UIActivityIndicatorView alloc]initWithActivityIndicatorStyle:UIActivityIndicatorViewStyleGray];

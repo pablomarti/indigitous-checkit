@@ -14,6 +14,8 @@
 
 @end
 
-@interface CIHomeViewController : CIBaseViewController
+@interface CIHomeViewController : CIBaseViewController <UICollectionViewDataSource, UICollectionViewDelegate>
+
+@property (weak, nonatomic) IBOutlet UICollectionView *collectionView;
 
 @end

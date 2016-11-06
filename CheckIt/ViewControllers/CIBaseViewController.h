@@ -12,6 +12,7 @@
 
 @property (nonatomic, strong) id delegate;
 
+- (void)viewControllerConfiguration;
 - (void)displayLoader;
 - (void)hideLoader;
 
