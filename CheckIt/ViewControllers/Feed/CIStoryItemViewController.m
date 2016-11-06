@@ -14,4 +14,10 @@
 
 @implementation CIStoryItemViewController
 
+- (void)viewDidLoad {
+    [super viewDidLoad];
+    [self displayCustomTitle:@"Status at Syria"];
+    [self displayBackButton];
+}
+
 @end
