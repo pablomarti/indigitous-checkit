@@ -17,6 +17,15 @@
 
 @implementation CIFeedFlowController
 
++ (CIBaseFlowController *)mainController {
+    static CIFeedFlowController *mainController = nil;
+    static dispatch_once_t onceToken;
+    dispatch_once(&onceToken, ^{
+        mainController = [CIFeedFlowController new];
+    });
+    return mainController;
+}
+
 - (CIBaseViewController *)initialViewController {
     return [[CIHomeViewController alloc] initWithNibName:@"CIHomeViewController" bundle:nil];
 }
