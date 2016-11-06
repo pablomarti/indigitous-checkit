@@ -16,5 +16,6 @@
 - (CIBaseViewController *)initialViewController;
 - (void)initializeWithWindow:(UIWindow *)window launchOptions:(NSDictionary *)launchOptions;
 - (void)initializeWithRootViewController:(UINavigationController *)vc;
+- (void)pushViewController:(CIBaseViewController *)vc;
 
 @end

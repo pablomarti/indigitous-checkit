@@ -12,4 +12,7 @@
 
 @property (nonatomic, strong) id delegate;
 
+- (void)displayLoader;
+- (void)hideLoader;
+
 @end

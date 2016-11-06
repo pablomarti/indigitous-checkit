@@ -24,11 +24,15 @@
 #pragma mark - CIHomeViewControllerDelegate
 
 - (void)moveToStory {
+    CIStoryViewController *vc = [[CIStoryViewController alloc] initWithNibName:@"CIStoryViewController" bundle:nil];
+    [self pushViewController: vc];
 }
 
 #pragma mark - CIStoryViewControllerDelegate
 
 - (void)moveToStoryItem {
+    CIStoryItemViewController *vc = [[CIStoryItemViewController alloc] initWithNibName:@"CIStoryItemViewController" bundle:nil];
+    [self pushViewController: vc];
 }
 
 #pragma mark - CIStoryItemViewControllerDelegate

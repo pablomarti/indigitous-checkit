@@ -54,6 +54,19 @@
     [navController setViewControllers:viewControllers animated:YES];
 }
 
+#pragma mark - Common actions
+
+- (void)goBack
+{
+    [self.mainViewController.navigationController popViewControllerAnimated:YES];
+}
+
+- (void)pushViewController:(CIBaseViewController *)vc
+{
+    vc.delegate = self;
+    [self.mainViewController.navigationController pushViewController:vc animated:YES];
+}
+
 #pragma mark - Set styles
 
 - (void)setupNavigationStyle:(UINavigationController *)navController {

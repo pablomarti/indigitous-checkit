@@ -10,28 +10,34 @@
 
 @interface CIBaseViewController ()
 
+@property (nonatomic, strong) UIActivityIndicatorView *activityIndicator;
+
 @end
 
 @implementation CIBaseViewController
 
-- (void)viewDidLoad {
-    [super viewDidLoad];
-    // Do any additional setup after loading the view.
+- (void)displayLoader
+{
+    if(!self.activityIndicator)
+    {
+        self.activityIndicator = [[UIActivityIndicatorView alloc]initWithActivityIndicatorStyle:UIActivityIndicatorViewStyleGray];
+        self.activityIndicator.frame = CGRectMake(0.0, 0.0, 40.0, 40.0);
+        self.activityIndicator.center = self.view.center;
+        [self.view addSubview:self.activityIndicator];
+        [self.activityIndicator bringSubviewToFront:self.view];
+        [UIApplication sharedApplication].networkActivityIndicatorVisible = YES;
+        [self.activityIndicator startAnimating];
+    }
 }
 
-- (void)didReceiveMemoryWarning {
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
+- (void)hideLoader
+{
+    if(self.activityIndicator)
+    {
+        [self.activityIndicator stopAnimating];
+        [UIApplication sharedApplication].networkActivityIndicatorVisible = NO;
+        self.activityIndicator = nil;
+    }
 }
-
-/*
-#pragma mark - Navigation
-
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
-}
-*/
 
 @end
