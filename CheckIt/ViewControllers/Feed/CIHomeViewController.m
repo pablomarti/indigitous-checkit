@@ -59,35 +59,11 @@
     // TODO: get data from API
     
     for (int i = 0; i < 12; i++) {
-        NSMutableArray *items = [NSMutableArray new];
-        for (int j = 0; j < 3; j++) {
-            NSDate *date = [NSDate new];
-            date = [date dateByAddingTimeInterval:-1*j*24*60*60];
-            
-            for(int k = 0; k < 3; k++) {
-                NSArray *imagesURLs; //TODO
-                CIStoryItemModel *item = [CIStoryItemModel new];
-                [item setTitle:@"Custom Title"];
-                [item setContent:@"Custom content"];
-                [item setDate: date];
-                [item setImagesURLs: imagesURLs];
-                [items addObject:item];
-            }
-            
-            NSURL *questionImageURL = [NSURL URLWithString:@""]; //TODO
-            CIQuestionModel *question = [CIQuestionModel new];
-            [question setTitle:@"Question title"];
-            [question setContent:@"Question content"];
-            [question setImageURL:questionImageURL];
-            [question setDate: date];
-        }
-        
         NSURL *storyImageURL = [NSURL URLWithString:@""]; //TODO
         CIStoryModel *story = [CIStoryModel new];
         [story setTitle:@"Custom title"];
         [story setContent:@"Custom description"];
         [story setImageURL:storyImageURL];
-        [story setStoryItems:items];
         [self.stories addObject:story];
     }
 }

@@ -17,7 +17,7 @@
 
 @interface CIStoryViewController ()
 
-@property (nonatomic, strong) NSMutableArray *storyItems;
+@property (nonatomic, strong) NSArray *storyItems;
 @property (nonatomic, assign) NSInteger cellCounter;
 
 @end
@@ -28,6 +28,10 @@
     [super viewDidLoad];
     [self displayCustomTitle:@"Story"];
     [self displayBackButton];
+}
+
+- (void)viewDidLayoutSubviews {
+    [self loadData];
 }
 
 - (void)viewControllerConfiguration {
@@ -42,6 +46,8 @@
     UINib *nib3 = [UINib nibWithNibName:@"CIStoryQuestionTableViewCell" bundle:nil];
     [self.tableView registerNib:nib3 forCellReuseIdentifier:@"CIStoryQuestionTableViewCell"];
 }
+
+#pragma mark - Tableview Management
 
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
     return [self.storyItems count];
@@ -65,7 +71,7 @@
     NSDictionary *dictionary = [self.storyItems objectAtIndex:indexPath.section];
     if ([[dictionary objectForKey:@"key"] isEqualToString: STORY_ITEM_KEY]) {
         CIStoryTableViewCell *cell;
-        if(self.cellCounter % 2 == 0) {
+        if(self.cellCounter++ % 2 == 0) {
             cell = [tableView dequeueReusableCellWithIdentifier: @"CIStoryAtLeftTableViewCell"];
         }
         else {
@@ -95,6 +101,13 @@
     else {
         // move to question
     }
+}
+
+#pragma mark - Helpers
+
+- (void)loadData {
+    self.storyItems = [self.story storyElements];
+    [self.tableView reloadData];
 }
 
 @end

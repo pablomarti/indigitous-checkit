@@ -21,6 +21,7 @@ extern NSString * const STORY_QUESTION_KEY;
 @property (nonatomic, strong) NSURL<Optional> *imageURL;
 @property (nonatomic, strong) NSArray<CIStoryItemModel *> *storyItems;
 @property (nonatomic, strong) NSArray<CIQuestion *> *questions;
-@property (nonatomic, strong) NSArray<Ignore> *elements;
+
+- (NSArray *)storyElements;
 
 @end
