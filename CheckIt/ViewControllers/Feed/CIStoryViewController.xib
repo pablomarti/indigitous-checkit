@@ -44,6 +44,13 @@
                         <constraint firstItem="alj-qv-q1R" firstAttribute="centerY" secondItem="Raw-xb-twy" secondAttribute="centerY" id="9Qk-6l-yXa"/>
                     </constraints>
                 </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="C68-nz-4fe">
+                    <color key="backgroundColor" red="1" green="0.88677514140000002" blue="0.23973262670000001" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="50" id="GdY-No-uql"/>
+                        <constraint firstAttribute="height" constant="50" id="YhE-6s-GWM"/>
+                    </constraints>
+                </view>
             </subviews>
             <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
             <constraints>
@@ -53,6 +60,8 @@
                 <constraint firstItem="Raw-xb-twy" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="MOw-y1-g56"/>
                 <constraint firstItem="5Mw-0x-vkt" firstAttribute="top" secondItem="Raw-xb-twy" secondAttribute="bottom" id="X7U-7U-Wqo"/>
                 <constraint firstItem="Raw-xb-twy" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="fZD-bU-ik2"/>
+                <constraint firstItem="C68-nz-4fe" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="8" id="iP5-7n-Amx"/>
+                <constraint firstAttribute="bottom" secondItem="C68-nz-4fe" secondAttribute="bottom" constant="8" id="r5K-hh-27z"/>
                 <constraint firstAttribute="bottom" secondItem="5Mw-0x-vkt" secondAttribute="bottom" id="tNo-gb-8Rr"/>
             </constraints>
             <point key="canvasLocation" x="33.5" y="51.5"/>

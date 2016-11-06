@@ -40,6 +40,8 @@
 		0FF299BA1DCFCEA400969698 /* CIQuestionTextViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0FF299B81DCFCEA400969698 /* CIQuestionTextViewController.xib */; };
 		0FF299BE1DCFCEBB00969698 /* CIQuestionPollViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0FF299BC1DCFCEBB00969698 /* CIQuestionPollViewController.m */; };
 		0FF299BF1DCFCEBB00969698 /* CIQuestionPollViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0FF299BD1DCFCEBB00969698 /* CIQuestionPollViewController.xib */; };
+		0FF299C41DCFD72000969698 /* CIStoryDateTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 0FF299C21DCFD72000969698 /* CIStoryDateTableViewCell.m */; };
+		0FF299C51DCFD72000969698 /* CIStoryDateTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0FF299C31DCFD72000969698 /* CIStoryDateTableViewCell.xib */; };
 		4BC367C3F0E7A247EA6A971A /* libPods-CheckIt.a in Frameworks */ = {isa = PBXBuildFile; fileRef = B9BB19EAFCAB44B03BFA8F05 /* libPods-CheckIt.a */; };
 /* End PBXBuildFile section */
 
@@ -100,6 +102,9 @@
 		0FF299BB1DCFCEBB00969698 /* CIQuestionPollViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CIQuestionPollViewController.h; path = ViewControllers/Feed/CIQuestionPollViewController.h; sourceTree = "<group>"; };
 		0FF299BC1DCFCEBB00969698 /* CIQuestionPollViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CIQuestionPollViewController.m; path = ViewControllers/Feed/CIQuestionPollViewController.m; sourceTree = "<group>"; };
 		0FF299BD1DCFCEBB00969698 /* CIQuestionPollViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = CIQuestionPollViewController.xib; path = ViewControllers/Feed/CIQuestionPollViewController.xib; sourceTree = "<group>"; };
+		0FF299C11DCFD72000969698 /* CIStoryDateTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CIStoryDateTableViewCell.h; path = Views/TableViewCells/CIStoryDateTableViewCell.h; sourceTree = "<group>"; };
+		0FF299C21DCFD72000969698 /* CIStoryDateTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CIStoryDateTableViewCell.m; path = Views/TableViewCells/CIStoryDateTableViewCell.m; sourceTree = "<group>"; };
+		0FF299C31DCFD72000969698 /* CIStoryDateTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = CIStoryDateTableViewCell.xib; path = Views/TableViewCells/CIStoryDateTableViewCell.xib; sourceTree = "<group>"; };
 		6D254E0FAF679C22485413C3 /* Pods-CheckIt.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CheckIt.debug.xcconfig"; path = "Pods/Target Support Files/Pods-CheckIt/Pods-CheckIt.debug.xcconfig"; sourceTree = "<group>"; };
 		9F2D82AFFD2478DDFCFE5A75 /* Pods-CheckIt.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CheckIt.release.xcconfig"; path = "Pods/Target Support Files/Pods-CheckIt/Pods-CheckIt.release.xcconfig"; sourceTree = "<group>"; };
 		B9BB19EAFCAB44B03BFA8F05 /* libPods-CheckIt.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-CheckIt.a"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -317,6 +322,9 @@
 				0FF299AE1DCFA15700969698 /* CIStoryQuestionTableViewCell.h */,
 				0FF299AF1DCFA15700969698 /* CIStoryQuestionTableViewCell.m */,
 				0FF299B01DCFA15700969698 /* CIStoryQuestionTableViewCell.xib */,
+				0FF299C11DCFD72000969698 /* CIStoryDateTableViewCell.h */,
+				0FF299C21DCFD72000969698 /* CIStoryDateTableViewCell.m */,
+				0FF299C31DCFD72000969698 /* CIStoryDateTableViewCell.xib */,
 			);
 			name = TableViewCells;
 			sourceTree = "<group>";
@@ -407,6 +415,7 @@
 				0FF299BA1DCFCEA400969698 /* CIQuestionTextViewController.xib in Resources */,
 				0FDE005F1DCEC9FA00005A5F /* LaunchScreen.storyboard in Resources */,
 				0FDE00821DCEDB5000005A5F /* CIHomeViewController.xib in Resources */,
+				0FF299C51DCFD72000969698 /* CIStoryDateTableViewCell.xib in Resources */,
 				0FDE00871DCEDB7F00005A5F /* CIStoryViewController.xib in Resources */,
 				0FF299AD1DCF9E4900969698 /* CIStoryAtRightTableViewCell.xib in Resources */,
 				0FF2999F1DCF7B6300969698 /* CIHomeCollectionViewCell.xib in Resources */,
@@ -490,6 +499,7 @@
 				0FDE00511DCEC9FA00005A5F /* main.m in Sources */,
 				0FF2999E1DCF7B6300969698 /* CIHomeCollectionViewCell.m in Sources */,
 				0FF299A21DCF8A6F00969698 /* CIQuestionModel.m in Sources */,
+				0FF299C41DCFD72000969698 /* CIStoryDateTableViewCell.m in Sources */,
 				0FDE007C1DCEDB0200005A5F /* CIBaseViewController.m in Sources */,
 				0FDE00961DCEE71000005A5F /* CIFonts.m in Sources */,
 				0FF299B51DCFA57F00969698 /* CIStoryTableViewCell.m in Sources */,
