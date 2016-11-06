@@ -23,6 +23,9 @@
 		0FDE008F1DCEE64100005A5F /* CIColors.m in Sources */ = {isa = PBXBuildFile; fileRef = 0FDE008E1DCEE64100005A5F /* CIColors.m */; };
 		0FDE00961DCEE71000005A5F /* CIFonts.m in Sources */ = {isa = PBXBuildFile; fileRef = 0FDE00951DCEE71000005A5F /* CIFonts.m */; };
 		0FDE00991DCEEB0500005A5F /* CIRoutesHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = 0FDE00981DCEEB0500005A5F /* CIRoutesHandler.m */; };
+		0FDE009C1DCEED9F00005A5F /* CIModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 0FDE009B1DCEED9F00005A5F /* CIModel.m */; };
+		0FDE009F1DCEEE3B00005A5F /* CIStoryModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 0FDE009E1DCEEE3B00005A5F /* CIStoryModel.m */; };
+		0FDE00A21DCEEE4E00005A5F /* CIStoryItemModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 0FDE00A11DCEEE4E00005A5F /* CIStoryItemModel.m */; };
 		4BC367C3F0E7A247EA6A971A /* libPods-CheckIt.a in Frameworks */ = {isa = PBXBuildFile; fileRef = B9BB19EAFCAB44B03BFA8F05 /* libPods-CheckIt.a */; };
 /* End PBXBuildFile section */
 
@@ -55,6 +58,12 @@
 		0FDE00951DCEE71000005A5F /* CIFonts.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CIFonts.m; path = AppStyles/CIFonts.m; sourceTree = "<group>"; };
 		0FDE00971DCEEB0500005A5F /* CIRoutesHandler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CIRoutesHandler.h; path = Routing/CIRoutesHandler.h; sourceTree = "<group>"; };
 		0FDE00981DCEEB0500005A5F /* CIRoutesHandler.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CIRoutesHandler.m; path = Routing/CIRoutesHandler.m; sourceTree = "<group>"; };
+		0FDE009A1DCEED9F00005A5F /* CIModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CIModel.h; path = Models/CIModel.h; sourceTree = "<group>"; };
+		0FDE009B1DCEED9F00005A5F /* CIModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CIModel.m; path = Models/CIModel.m; sourceTree = "<group>"; };
+		0FDE009D1DCEEE3B00005A5F /* CIStoryModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CIStoryModel.h; path = Models/CIStoryModel.h; sourceTree = "<group>"; };
+		0FDE009E1DCEEE3B00005A5F /* CIStoryModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CIStoryModel.m; path = Models/CIStoryModel.m; sourceTree = "<group>"; };
+		0FDE00A01DCEEE4E00005A5F /* CIStoryItemModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CIStoryItemModel.h; path = Models/CIStoryItemModel.h; sourceTree = "<group>"; };
+		0FDE00A11DCEEE4E00005A5F /* CIStoryItemModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CIStoryItemModel.m; path = Models/CIStoryItemModel.m; sourceTree = "<group>"; };
 		6D254E0FAF679C22485413C3 /* Pods-CheckIt.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CheckIt.debug.xcconfig"; path = "Pods/Target Support Files/Pods-CheckIt/Pods-CheckIt.debug.xcconfig"; sourceTree = "<group>"; };
 		9F2D82AFFD2478DDFCFE5A75 /* Pods-CheckIt.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CheckIt.release.xcconfig"; path = "Pods/Target Support Files/Pods-CheckIt/Pods-CheckIt.release.xcconfig"; sourceTree = "<group>"; };
 		B9BB19EAFCAB44B03BFA8F05 /* libPods-CheckIt.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-CheckIt.a"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -167,6 +176,12 @@
 		0FDE006A1DCED88A00005A5F /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				0FDE009A1DCEED9F00005A5F /* CIModel.h */,
+				0FDE009B1DCEED9F00005A5F /* CIModel.m */,
+				0FDE009D1DCEEE3B00005A5F /* CIStoryModel.h */,
+				0FDE009E1DCEEE3B00005A5F /* CIStoryModel.m */,
+				0FDE00A01DCEEE4E00005A5F /* CIStoryItemModel.h */,
+				0FDE00A11DCEEE4E00005A5F /* CIStoryItemModel.m */,
 			);
 			name = Models;
 			sourceTree = "<group>";
@@ -375,11 +390,14 @@
 				0FDE008B1DCEE47A00005A5F /* CIStoryItemViewController.m in Sources */,
 				0FDE00811DCEDB5000005A5F /* CIHomeViewController.m in Sources */,
 				0FDE00791DCED97900005A5F /* CIFeedFlowController.m in Sources */,
+				0FDE009C1DCEED9F00005A5F /* CIModel.m in Sources */,
 				0FDE00541DCEC9FA00005A5F /* AppDelegate.m in Sources */,
 				0FDE00861DCEDB7F00005A5F /* CIStoryViewController.m in Sources */,
+				0FDE00A21DCEEE4E00005A5F /* CIStoryItemModel.m in Sources */,
 				0FDE00511DCEC9FA00005A5F /* main.m in Sources */,
 				0FDE007C1DCEDB0200005A5F /* CIBaseViewController.m in Sources */,
 				0FDE00961DCEE71000005A5F /* CIFonts.m in Sources */,
+				0FDE009F1DCEEE3B00005A5F /* CIStoryModel.m in Sources */,
 				0FDE008F1DCEE64100005A5F /* CIColors.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
