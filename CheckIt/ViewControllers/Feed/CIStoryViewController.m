@@ -14,6 +14,7 @@
 #import "CIStoryAtLeftTableViewCell.h"
 #import "CIStoryAtRightTableViewCell.h"
 #import "CIStoryQuestionTableViewCell.h"
+#import "CIStoryDateTableViewCell.h"
 
 @interface CIStoryViewController ()
 
@@ -45,6 +46,9 @@
     
     UINib *nib3 = [UINib nibWithNibName:@"CIStoryQuestionTableViewCell" bundle:nil];
     [self.tableView registerNib:nib3 forCellReuseIdentifier:@"CIStoryQuestionTableViewCell"];
+    
+    UINib *nib4 = [UINib nibWithNibName:@"CIStoryDateTableViewCell" bundle:nil];
+    [self.tableView registerNib:nib4 forCellReuseIdentifier:@"CIStoryDateTableViewCell"];
 }
 
 #pragma mark - Tableview Management
@@ -71,8 +75,9 @@
     NSDictionary *dictionary = [self.storyItems objectAtIndex:indexPath.section];
     if ([[dictionary objectForKey:@"key"] isEqualToString: STORY_ITEM_KEY]) {
         CIStoryTableViewCell *cell;
-        if(self.cellCounter++ % 2 == 0) {
+        if(self.cellCounter % 2 == 0) {
             cell = [tableView dequeueReusableCellWithIdentifier: @"CIStoryAtLeftTableViewCell"];
+            self.cellCounter++;
         }
         else {
             cell = [tableView dequeueReusableCellWithIdentifier: @"CIStoryAtRightTableViewCell"];
@@ -80,9 +85,14 @@
         cell.storyItem = (CIStoryItemModel *)[dictionary objectForKey:@"item"];
         return cell;
     }
-    else {
+    else if([[dictionary objectForKey:@"key"] isEqualToString: STORY_QUESTION_KEY]){
         CIStoryQuestionTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier: @"CIStoryQuestionTableViewCell"];
         cell.question = (CIQuestionModel *)[dictionary objectForKey:@"item"];
+        return cell;
+    }
+    else {
+        CIStoryDateTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier: @"CIStoryDateTableViewCell"];
+        [cell.lblDate setText: [dictionary objectForKey:@"item"]];
         return cell;
     }
 }

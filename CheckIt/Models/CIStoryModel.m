@@ -12,6 +12,7 @@
 
 NSString * const STORY_ITEM_KEY         = @"story_item";
 NSString * const STORY_QUESTION_KEY     = @"story_question";
+NSString * const STORY_DATE_KEY         = @"story_date";
 
 @implementation CIStoryModel
 
@@ -40,6 +41,14 @@ NSString * const STORY_QUESTION_KEY     = @"story_question";
         [question setImageURL:questionImageURL];
         [question setDate: date];
         [elements addObject: @{@"key": STORY_QUESTION_KEY, @"item": question}];
+        
+        if(j > 0) {
+//            NSDateFormatter *formatter = [[NSDateFormatter alloc] init];
+//            [formatter setDateFormat:@"dd/MM/yyyy"];
+//            NSString *dateString = [formatter stringFromDate: date];
+//            return dateString;
+//            [elements addObject: @{@"key": STORY_DATE_KEY, @"item": date}];
+        }
     }
     
     return elements;

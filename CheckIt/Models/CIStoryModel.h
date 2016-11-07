@@ -10,6 +10,7 @@
 
 extern NSString * const STORY_ITEM_KEY;
 extern NSString * const STORY_QUESTION_KEY;
+extern NSString * const STORY_DATE_KEY;
 
 @class CIStoryItemModel;
 @class CIQuestion;
